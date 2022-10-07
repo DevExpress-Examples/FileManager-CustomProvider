@@ -1,3 +1,7 @@
+<!-- default badges list -->
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/547236804/22.1.4%2B)
+[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+<!-- default badges end -->
 # File Manager for DevExtreme - How to implement a custom provider
 
 The sample illustrates how to implement your own [custom provider](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Custom/) for DevExtreme. In the sample, the file manager is placed on the Razor page, and ajax requests are sent to the server to interact with folders/files on the server.
