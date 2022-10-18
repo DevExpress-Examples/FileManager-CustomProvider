@@ -81,6 +81,5 @@ function SendAjaxRequest(url, data, requestType = "get") {
 
 
 ## Files to Review
-
 - [Index.cshtml](./CS/Pages/Index.cshtml)
 - [DataController.cs](./CS/Controllers/DataController.cs)
