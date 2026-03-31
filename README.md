@@ -76,15 +76,15 @@ function SendAjaxRequest(url, data, requestType = "get") {
             return this.CreateResponse(true, null, null, null); ;
         }
         string CreateResponse(bool success, int? errorCode, string errorText, FileDataItem[] result) {
-            var serializerSettings = new JsonSerializerSettings() { ContractResolver = new CamelCasePropertyNamesContractResolver() };            
-            return JsonConvert.SerializeObject(new { success, errorCode, errorText, result }, serializerSettings);
+            var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
+            return JsonSerializer.Serialize(new { success, errorCode, errorText, result }, options);
         }
 ```
 
 
 ## Files to Review
-- [Index.cshtml](./CS/Pages/Index.cshtml)
-- [DataController.cs](./CS/Controllers/DataController.cs)
+- [Index.cshtml](./ASP.NET%20Core/Views/Home/Index.cshtml)
+- [DataController.cs](./ASP.NET%20Core/Controllers/DataController.cs)
 <!-- feedback -->
 ## Does This Example Address Your Development Requirements/Objectives?
 
